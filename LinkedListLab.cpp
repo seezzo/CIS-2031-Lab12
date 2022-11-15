@@ -16,6 +16,7 @@ void print(List *l) {
         cout << l->value;  // Print out it's value
         l = l->next;       // Move on to the next value
     }
+    cout << endl;
 }
 
 // Returns the number of items in the list
@@ -49,18 +50,22 @@ int main() {
     insertAt(theList, 0, "D");
     insertAt(theList, 0, "C");
     insertAt(theList, 0, "A");  // List has ACD
+    print(theList);
 
     //insertAt 1 will put B after A
     insertAt(theList, 1, "B");  // Now list has ABCD
+    print(theList);
 
     //If the position is bigger than the list it should just be at the end
     insertAt(theList, 100, "E");  // Now list has ABCDE
+    print(theList);
+    cout << "The list is " << length(theList) << " long." << endl;
+
 
     //Expected Output:
+    //  ACD
+    //  ABCD
     //  ABCDE
     //  The list is 5 long.
-    print(theList);
-    cout << endl << "The list is " << length(theList) << " long." << endl;
-
 
 }
