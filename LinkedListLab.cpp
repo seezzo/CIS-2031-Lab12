@@ -35,7 +35,7 @@ void insertAt(List *&list, int pos, string value) {
         list = new List{value, list};
     } else {
         List *l = list;
-        while (l->next != NULL && pos > 1) {
+        while (pos > 1) {
             pos--;
             l = l->next;
         }
