@@ -57,7 +57,7 @@ int main() {
     print(theList);
 
     //If the position is bigger than the list it should just be at the end
-    insertAt(theList, 100, "E");  // Now list has ABCDE
+    insertAt(theList, 3, "E");  // Now list has ABCDE
     print(theList);
     cout << "The list is " << length(theList) << " long." << endl;
 
